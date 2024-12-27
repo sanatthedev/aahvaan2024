@@ -5,7 +5,7 @@
 }
 
 a{
-    color: rgb(0, 45, 128);
+    color: rgb(189, 17, 52);
 }
 
 .gotu-regular {
@@ -180,6 +180,7 @@ form{
     border-bottom: solid 0.2vh blanchedalmond;
     width: 30vw;
     align-items: center;
+    margin-bottom: 2vh;
 }
 
 #input:focus{
@@ -223,12 +224,12 @@ input::-webkit-inner-spin-button {
 button{
     background-color: black;
     border: 0.1vh solid blanchedalmond;
-    width: 5vw;
-    height: 3vh;
+    width: 8vw;
+    height: 4vh;
     color: blanchedalmond;
     font-family: "Gotu", serif;
     font-weight: 700;
-    font-size: 1.2vw;
+    font-size: 2vh;
     transition: 0.2s;
 }
 
@@ -363,7 +364,7 @@ textarea{
     }
 
     #inputmessage::placeholder{
-        font-size: 1vh;
+        font-size: 2vh;
     }
 
     .message{
@@ -371,12 +372,20 @@ textarea{
         height: 7.5vh;
         width: 60vw;
         border-radius: 2vh;
+        margin-top: 2vh;
     }
 
     button{
-        /* height: vh; */
-        width: 10vw;
-        font-size: 1vh;
+        font-size: 1.3vh;
+        border: 0.05vh solid blanchedalmond;
+        padding-top: 0.2vh;
+        width: 15vw;
+        /* margin-bottom: 2vh; */
+    }
+
+    button:hover{
+        scale: 3.0;
+        transition: 0.2s;
     }
 
     .tagline2{
