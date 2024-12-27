@@ -463,3 +463,15 @@ textarea{
     }
 
 }
+
+@media screen and (max-height: 850px) {
+
+    .aahvaan{
+        height: 120vh;
+    }
+    
+    .form{
+        height: 40vh;
+    }
+
+}
