@@ -462,6 +462,10 @@ textarea{
         height: 10vh;
     }
 
+    .social{
+        font-size: 3vh;
+    }
+
 }
 
 @media screen and (max-height: 850px) and (min-width: 1000px) {
