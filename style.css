@@ -102,7 +102,7 @@ body{
 .heading{
     font-size: 12vw;
     color: rgb(189, 17, 52);
-    padding-bottom: -15vh;
+    /* padding-bottom: -15vh; */
     font-family: "Amita", serif;
 }
 
@@ -120,7 +120,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: burlywood;
+    background-color: blanchedalmond;
 }
 
 .formhead{
@@ -262,12 +262,16 @@ textarea{
 .contactus{
     height: 40vh;
     width: 70vw;
-    background-color: blanchedalmond;
+    background-color: white;
     border: 0.5vw solid burlywood;
     border-radius: 0.5vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.contactus2{
+    display: none;
 }
 
 .social{
@@ -276,7 +280,7 @@ textarea{
     font-weight: 900;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) and (min-height: 550px) {
 
     .header{
         flex-direction: column;
@@ -390,10 +394,63 @@ textarea{
         justify-content: center;
         align-items: center;
         border-radius: 2vw;
+        display: none;
+    }
+
+    .contactus2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        width: 85vw;
+        background-color: white;
+        border: 0.5vh solid burlywood;
+        border-radius: 2vh;
     }
 
     .social{
         padding-bottom: 1vh;
         font-size: 2vh;
     }
+}
+
+@media screen and (max-height: 500px) {
+    
+    .header{
+        height: 25vh;
+    }
+    
+    .intro{
+        height: 75vh;
+    }
+
+    .mainlogo{
+        width: 15vh;
+    }
+
+    #flag{
+        width: 20vh;
+    }
+
+    .heading{
+        font-size: 6vw;
+    }
+
+    .aahvaan{
+        height: 200vh;
+    }
+
+    .form{
+        height: 70vh;
+    }
+
+    .message{
+        height: 45vh;
+    }
+
+    button{
+        height: 10vh;
+    }
+
 }
