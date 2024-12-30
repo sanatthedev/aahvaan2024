@@ -81,7 +81,14 @@ body{
 .text{
     color: white;
     font-size: 2.5vw;
-    padding-bottom: 3vh;
+    /* padding-bottom: 3vh; */
+    font-family: "Yatra One", serif;
+}
+
+.text2{
+    color: white;
+    font-size: 2.5vw;
+    /* padding-bottom: 3vh; */
     font-family: "Yatra One", serif;
 }
 
@@ -99,8 +106,16 @@ body{
     align-items: center;
 }
 
+#heading{
+    display: flex;
+    margin-top: 40vh;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
 .heading{
     font-size: 12vw;
+    font-weight: 900;
     color: rgb(189, 17, 52);
     /* padding-bottom: -15vh; */
     font-family: "Amita", serif;
@@ -109,9 +124,9 @@ body{
 .tagline{
     font-size: 2vw;
     color: burlywood;
-    margin-bottom: 30vh;
+    margin-bottom: 50vh;
     font-family: "Yatra One", serif;
-    padding-bottom: 10vh;
+    padding-bottom: 20vh;
 }
 
 .aahvaan{
@@ -254,6 +269,7 @@ textarea{
 }
 
 .tagline2{
+    margin-top: 5vh;
     font-size: 2vw;
     color: burlywood;
     margin-bottom: 5vh;
@@ -286,6 +302,10 @@ textarea{
     .header{
         flex-direction: column;
     }
+    
+    #heading{
+        margin-top: 0;
+    }
 
     .mainlogo{
         padding: 2vh;
@@ -315,15 +335,20 @@ textarea{
         font-size: 3vh;
     }
 
+    .text2{
+        margin-top: 15vh;
+        font-size: 3vh;
+    }
+
     .heading{
-        font-size: 10vh;
+        font-size: 8vh;
     }
 
     .tagline{
         font-size: 2vh;
-        padding-left: 3vw;
-        padding-right: 3vw;
-        margin-bottom: 20vh;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        margin-bottom: 5vh;
     }
 
     .aahvaan{
@@ -393,6 +418,8 @@ textarea{
         align-items: center;
         padding-left: 5vw;
         padding-right: 5vw;
+        margin-top: 2.5vh;
+        margin-bottom: 6vh;   
     }
 
 
