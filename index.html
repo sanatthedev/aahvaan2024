@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hindi samiti specimen</title>
+    <title>hindi samiti scroll</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Gotu&family=Yatra+One&display=swap" rel="stylesheet">
 
 </head>
 <body>
+    <main id="scrollcontainer">
     <header>
         <div class="header">
             <div class="title">
@@ -25,15 +27,27 @@
         </div>
     </header>
     <div class="intro">
-        <h1 class="heading">आह्वान</h1>
-        <h1 class="text">वार्षिक चयन प्रक्रिया - २०२४</h1>
-        <center><h1 class="tagline">कि सहसा गूँज उठा सब ओर तुम्हारा चिर परिचित आह्वान...</h1></center>
+        <!-- <h1 class="heading">आह्वान</h1> -->
+         <div id="heading">
+            <!-- <span class="heading" data-scroll data-scroll-speed="1.2" data-scroll-delay="0.05">&nbsp;</span> -->
+            <span class="heading" data-scroll data-scroll-speed="1.2" data-scroll-delay="0.05">.</span>
+            <span class="heading" data-scroll data-scroll-speed="1.2" data-scroll-delay="0.1">.</span>
+            <span class="heading" data-scroll data-scroll-speed="1.2" data-scroll-delay="0.15">.</span>
+            <span class="heading" data-scroll data-scroll-speed="1.2" data-scroll-delay="0.2">आ</span>
+            <span class="heading" data-scroll data-scroll-speed="1.2" data-scroll-delay="0.8">ह्वा</span>
+            <span class="heading" data-scroll data-scroll-speed="1.2" data-scroll-delay="0.2">न&nbsp;</span>
+            <span class="heading" data-scroll data-scroll-speed="1.2" data-scroll-delay="0.15">.</span>
+            <span class="heading" data-scroll data-scroll-speed="1.2" data-scroll-delay="0.1">.</span>
+            <span class="heading" data-scroll data-scroll-speed="1.2" data-scroll-delay="0.05">.</span>
+         </div>
+        <h1 class="text" data-scroll data-scroll-speed="1.8" data-scroll-delay="0.8">वार्षिक चयन प्रक्रिया - २०२४</h1>
+        <center><h1 class="tagline" data-scroll data-scroll-speed="1.8" data-scroll-delay="0.8">कि सहसा गूँज उठा सब ओर तुम्हारा चिर परिचित आह्वान...</h1></center>
     </div>
     <div class="aahvaan">
-        <center><h1 class="formhead">हिंदी समिति में आवेदन करने हेतु निम्नलिखित जानकारी साझा करें।</h1></center>
+        <center><h1 class="formhead" data-scroll data-scroll-speed="1" data-scroll-delay="0.8">हिंदी समिति में आवेदन करने हेतु निम्नलिखित जानकारी साझा करें।</h1></center>
         <br>
         <br>
-        <div class="form">
+        <div class="form" data-scroll data-scroll-speed="2" data-scroll-delay="0.8">
             <center><form>
                 <label id="label" for="name">नाम:</label>
                 <input type="text" id="input" name="name" placeholder="आवेदक का नाम"><br><br>
@@ -56,9 +70,7 @@
                 <input type="text" id="input" name="name" placeholder="जिला / संभाग"><br><br>
             </form></center>
         </div>
-        <br>
-        <br>
-        <div class="message">
+        <div class="message" data-scroll data-scroll-speed="3" data-scroll-delay="0.8">
             <!-- <form id="message"> -->
                 <label id="label" for="name">संदेश:</label>
                 <input type="text" id="inputmessage" name="name"></input>
@@ -68,10 +80,9 @@
         </div>
     </div>
     <div class="footer">
-        <h1 class="text">हमसे संपर्क करने हेतु...</h1>
-        <center><h1 class="tagline2">किसी भी प्रकार की जानकारी के लिए दिए गए संपर्क सूत्रों के माध्यम से संपर्क करें।</h1></center>
-        <div class="contactus">
-
+        <h1 class="text2" data-scroll data-scroll-speed="1.8" data-scroll-delay="0.8">हमसे संपर्क करने हेतु...</h1>
+        <center><h1 class="tagline2" data-scroll data-scroll-speed="2.4" data-scroll-delay="0.8">किसी भी प्रकार की जानकारी के लिए दिए गए संपर्क सूत्रों के माध्यम से संपर्क करें।</h1></center>
+        <div class="contactus"  data-scroll data-scroll-speed="3.2" data-scroll-delay="0.8">
             <div class="sec1">
                 <p class="social">WhatsApp Group: <a href="https://chat.whatsapp.com/BfKZ1gIXWLlHKxNvqE2bFD">Hindi Samiti</a></p>
 
@@ -103,5 +114,18 @@
             <p class="social">linkedIn: <a href="https://www.linkedin.com/company/hindisamiti/">हिंदी समिति (Hindi Samiti)</a></p>
         </div>
     </div>
+    </main>
+      <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+      <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script> -->
+      <script>
+        const scroll = new LocomotiveScroll({
+          el: document.querySelector("#scrollcontainer"),
+          smooth: true,
+          smoothMobile: true,
+          multiplier: 2,
+          resetNativeScroll: true,
+          lerp: 0.09,
+        });
+      </script>
 </body>
 </html>
