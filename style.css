@@ -45,7 +45,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    position: fixed;
 }
 
 .title{
@@ -69,7 +69,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 81.38vh;
+    height: 100vh;
+    /* margin-bottom: 30vh; */
     /* background-image: url(bg.jpg);
     background-repeat: none;
     background-size: cover;
@@ -117,14 +118,14 @@ body{
     padding-bottom: 2vw;
 }
 
-#intro{
-    justify-content: center;
+/* #intro{
+    justify-content: space-around;
     align-items: center;
-}
+} */
 
 #heading{
     display: flex;
-    margin-top: 45vh;
+    /* margin-top: 45vh; */
     /* justify-content: center; */
     /* align-items: center; */
 }
@@ -140,9 +141,9 @@ body{
 .tagline{
     font-size: 2vw;
     color: burlywood;
-    margin-bottom: 50vh;
+    /* margin-bottom: 60vh; */
     font-family: "Yatra One", serif;
-    padding-bottom: 30vh;
+    padding-bottom: 20vh;
 }
 
 .aahvaan{
@@ -353,15 +354,17 @@ textarea{
 
     .text{
         font-size: 3vh;
+        margin-top: 0vh;
     }
 
     .text2{
-        margin-top: 15vh;
+        margin-top: 5vh;
         font-size: 3vh;
     }
 
     .heading{
         font-size: 8vh;
+        margin-top: 20vh;
     }
 
     .tagline{
@@ -434,13 +437,17 @@ textarea{
         transition: 0.2s;
     }
 
+    .footer{
+        height: 100vh;
+    }
+
     .tagline2{
         font-size: 2vh;
         align-items: center;
         padding-left: 5vw;
         padding-right: 5vw;
         margin-top: 2.5vh;
-        margin-bottom: 10vh;   
+        margin-bottom: 5vh;  
     }
 
 
@@ -475,11 +482,11 @@ textarea{
 @media screen and (max-height: 550px) {
     
     .header{
-        height: 25vh;
+        height: 20vh;
     }
     
     .intro{
-        height: 75vh;
+        height: 100vh;
     }
 
     .mainlogo{
@@ -492,6 +499,7 @@ textarea{
 
     .heading{
         font-size: 6vw;
+        margin-top: 5vh;
     }
 
     .aahvaan{
@@ -514,6 +522,14 @@ textarea{
         font-size: 3vh;
     }
 
+    .text2{
+        margin-top: 5vh;
+    }
+
+    .tagline2{
+        margin-bottom: 0vh;
+    }
+
 }
 
 @media screen and (max-height: 850px) and (min-width: 1000px) {
@@ -525,5 +541,22 @@ textarea{
     .form{
         height: 50vh;
     }
+
+    .text{
+        margin-top: 0;
+        padding-top: 0;    
+    }
+
+    .heading{
+        margin-top: 0vh;
+    }
+
+    .bg{
+        height: 110vh;
+    }
+
+    /* .tagline{
+        padding-bottom: 40vh;
+    } */
 
 }
